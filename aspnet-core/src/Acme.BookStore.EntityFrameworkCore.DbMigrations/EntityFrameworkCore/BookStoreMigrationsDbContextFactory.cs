@@ -16,7 +16,7 @@ namespace Acme.BookStore.EntityFrameworkCore
             var configuration = BuildConfiguration();
 
             var builder = new DbContextOptionsBuilder<BookStoreMigrationsDbContext>()
-                .UseSqlServer(configuration.GetConnectionString("Default"));
+                .UseMySql(configuration.GetConnectionString("Default"));
 
             return new BookStoreMigrationsDbContext(builder.Options);
         }
