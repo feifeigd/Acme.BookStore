@@ -9,6 +9,14 @@
 ```
 注意：初始化的名字"AbpZero_Initial"不能变
 
+选择 Acme.BookStore.DbMigrator 为启动项目，Ctrl+F5运行，导入数据库和初始化数据
+
+
+新增迁移：
+```
+Add-Migration "自定义名字"
+```
+
 写入数据库
 ```
 update-database
